@@ -1,6 +1,9 @@
 const addTask = () =>{
     const input  = document.getElementById('input')
-
+    if(input.value === ''){
+      return alert('please type any task')
+    }
+    
     const TaskList = document.getElementById('taskList')
     const newTask = document.createElement('li')
     TaskList.append(newTask)
